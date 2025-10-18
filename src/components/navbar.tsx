@@ -21,7 +21,7 @@ export function Navbar() {
   }, [open]);
 
   return (
-    <header className="w-full">
+    <div className="w-full">
       <div className=" py-3 flex items-center justify-between">
         <Link href="/" aria-label="Boldo home" className="flex items-center">
           <Image src="/logo.svg" alt="Boldo" width={162} height={42} priority />
@@ -118,7 +118,7 @@ export function Navbar() {
           </nav>
         </div>
       ) : null}
-    </header>
+    </div>
   );
 }
 
