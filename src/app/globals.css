@@ -37,6 +37,21 @@
   --color-popover: var(--popover);
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
+  /* Boldo brand tokens */
+  --color-boldo-blue-dark: var(--boldo-blue-dark);
+  --color-boldo-green: var(--boldo-green);
+  --color-boldo-green-stroke: var(--boldo-green-stroke);
+  --color-boldo-blue: var(--boldo-blue);
+  --color-boldo-white: var(--boldo-white);
+  /* Boldo brand hover tokens */
+  --color-boldo-blue-dark-hover: color-mix(
+    in oklab,
+    var(--boldo-blue-dark) 90%,
+    black
+  );
+  --color-boldo-green-hover: color-mix(in oklab, var(--boldo-green) 90%, black);
+  --color-boldo-blue-hover: color-mix(in oklab, var(--boldo-blue) 90%, black);
+  --color-boldo-white-hover: color-mix(in oklab, var(--boldo-white) 90%, black);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -63,6 +78,12 @@
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
+  /* Boldo brand colors */
+  --boldo-blue-dark: #0a2640;
+  --boldo-green: #65e4a3;
+  --boldo-green-stroke: #69e6a6;
+  --boldo-white: #ffffff;
+  --boldo-blue: #1169fe;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
