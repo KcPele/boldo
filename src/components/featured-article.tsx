@@ -7,7 +7,7 @@ export function FeaturedArticle() {
       <div className="order-1 md:order-none">
         <div className="relative w-full overflow-hidden rounded-3xl">
           <Image
-            src="/featured-hero.png"
+            src="/img/featured-hero.png"
             alt="Featured article image"
             width={600}
             height={421}
@@ -30,7 +30,7 @@ export function FeaturedArticle() {
         <div className="flex items-center gap-3">
           <div className="size-8 overflow-hidden rounded-full">
             <Image
-              src="/featured-author.png"
+              src="/img/featured-author.png"
               alt="Featured author"
               width={32}
               height={32}
