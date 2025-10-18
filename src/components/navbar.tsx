@@ -22,7 +22,7 @@ export function Navbar() {
 
   return (
     <header className="w-full">
-      <div className="mx-auto max-w-[1200px] px-6 py-3 flex items-center justify-between">
+      <div className=" py-3 flex items-center justify-between">
         <Link href="/" aria-label="Boldo home" className="flex items-center">
           <Image src="/logo.svg" alt="Boldo" width={162} height={42} priority />
         </Link>
