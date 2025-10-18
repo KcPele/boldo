@@ -1,4 +1,5 @@
 import ArticleCard from "@/components/article-card";
+import { Button } from "./ui/button";
 
 export function LatestNews() {
   return (
@@ -56,6 +57,12 @@ export function LatestNews() {
           authorName="Monica Geller"
           authorImageSrc="/img/latest-3-author.png"
         />
+      </div>
+
+      <div className="flex justify-center my-28">
+        <Button size="lg" variant="secondary" className="cursor-pointer">
+          Load more
+        </Button>
       </div>
     </section>
   );

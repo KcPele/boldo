@@ -38,6 +38,7 @@
   --color-card-foreground: var(--card-foreground);
   --color-card: var(--card);
   /* Boldo brand tokens */
+  --color-boldo-blue-dark-bg: var(--boldo-blue-dark-bg);
   --color-boldo-blue-dark: var(--boldo-blue-dark);
   --color-boldo-green: var(--boldo-green);
   --color-boldo-green-stroke: var(--boldo-green-stroke);
@@ -57,7 +58,6 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
 }
-
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
@@ -79,6 +79,7 @@
   --input: oklch(0.922 0 0);
   --ring: oklch(0.708 0 0);
   /* Boldo brand colors */
+  --boldo-blue-dark-bg: #1c3d5b;
   --boldo-blue-dark: #0a2640;
   --boldo-green: #65e4a3;
   --boldo-green-stroke: #69e6a6;
