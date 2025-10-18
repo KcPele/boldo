@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Boldo Blog UI (Next.js)
 
-## Getting Started
+A polished, interview-ready implementation of the Boldo Blog UI using Next.js App Router, Tailwind CSS v4, and shadcn-style components. The project mirrors the provided Figma design: global theming, buttons, navbar, footer, featured article, latest news grid, and a call-to-action section.
 
-First, run the development server:
+### Highlights
+
+- Design-accurate components built from Figma :
+  - Navbar (responsive with hamburger menu)
+  - Button system (variants and sizes mapped to Boldo tokens)
+  - Featured Article section
+  - Reusable Article Card
+  - Latest News (6-article grid)
+  - Footer
+  - Call To Action (email capture layout)
+- Centralized color tokens with CSS variables in `src/app/globals.css` (Tailwind v4 `@theme inline`).
+- Strict linting/formatting with Biome.
+
+### Tech Stack
+
+- Next.js 15 (App Router)
+- React 19
+- Tailwind CSS v4
+- Biome (lint/format)
+- Radix UI primitives (separator, slot)
+- lucide-react icons
+
+### Getting Started
+
+1. Install dependencies
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+bun install
+# or: npm i | pnpm i | yarn
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Run the dev server
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+bun dev
+# http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+3. Lint and format
 
-## Learn More
+```bash
+bun lint
+bun format
+```
 
-To learn more about Next.js, take a look at the following resources:
+### Project Structure
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```text
+src/
+  app/
+    layout.tsx           # Fonts, global styles, Navbar, Footer
+    page.tsx             # Home page composition
+    globals.css          # Tailwind v4 theme + CSS variables
+  components/
+    ui/button.tsx        # Boldo design-system button variants/sizes
+    navbar.tsx           # Responsive navbar with mobile menu
+    footer.tsx           # Footer columns + copy
+    heading.tsx          # Page heading
+    featured-article.tsx # Hero article block
+    article-card.tsx     # Reusable article card
+    latest-news.tsx      # Section with 6 articles
+    call-to-action.tsx   # CTA section (email + button)
+  lib/
+    utils.ts             # cn() helper (clsx + tailwind-merge)
+public/
+  logo.svg               # Brand logo (from Figma)
+  ...                    # Article images and avatars
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Theming
 
-## Deploy on Vercel
+- Brand tokens are defined in `:root` as CSS variables and exposed to Tailwind via `@theme inline` as `--color-*` tokens.
+- Use classes like `bg-boldo-blue-dark`, `text-boldo-white`, `border-boldo-blue-dark`, etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Commands
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Develop
+bun dev
+
+# Type-check (Next.js handles TS at build)
+bun build
+
+# Lint / Format
+bun lint
+bun format
+```
+
+### Notes
+
+- Images were downloaded from the provided Figma file and stored in `public/`.
+- Components are designed for clarity, accessibility (aria labels, keyboard focus), and alignment with the design system.

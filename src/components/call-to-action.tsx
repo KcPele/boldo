@@ -2,8 +2,10 @@ import { Button } from "@/components/ui/button";
 
 export function CallToAction() {
   return (
-    <section className="relative overflow-hidden rounded-xl bg-boldo-blue-dark py-20 mb-21 -z-10 p-2">
-      <div className="mx-auto max-w-[756px] text-center">
+    <section className="relative overflow-hidden rounded-xl bg-boldo-blue-dark py-20 mb-21 p-2">
+      <div className="absolute  bottom-20 left-[50%] w-7xl h-[1293px]  rounded-full bg-boldo-blue-dark-bg"></div>
+
+      <div className="mx-auto relative z-10 max-w-[756px] text-center">
         <h2 className="text-boldo-white text-3xl md:text-[48px] leading-[1.5]">
           An enterprise template to ramp up your company website
         </h2>
@@ -24,7 +26,6 @@ export function CallToAction() {
           </Button>
         </div>
       </div>
-      <div className="absolute  bottom-20 left-[50%] w-7xl h-[1293px] -z-10 rounded-full bg-boldo-blue-dark-bg"></div>
     </section>
   );
 }
