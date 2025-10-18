@@ -1,8 +1,8 @@
-import { Heading } from "@/components/heading";
-import { FeaturedArticle } from "@/components/featured-article";
 import { Separator } from "@radix-ui/react-separator";
-import { LatestNews } from "@/components/latest-news";
 import { CallToAction } from "@/components/call-to-action";
+import { FeaturedArticle } from "@/components/featured-article";
+import { Heading } from "@/components/heading";
+import { LatestNews } from "@/components/latest-news";
 
 export default function Home() {
   return (
